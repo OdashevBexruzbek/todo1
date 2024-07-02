@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { IoMdSunny, IoMdMoon } from "react-icons/io";
 import { v4 as uuidv4 } from "uuid";
-import { FaEdit, FaTrash } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
 import toast from "react-hot-toast";
 
 import {

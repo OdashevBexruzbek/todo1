@@ -44,7 +44,7 @@ function Register() {
           )}
           {isPending && (
             <button disabled className="btn btn-block btn-primary">
-              Loading...
+              <span className="loading loading-dots loading-lg"></span>
             </button>
           )}
         </div>
