@@ -4,14 +4,14 @@ import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="bg-base-200 mb-8">
+    <div className="bg-base-300 mb-3">
       <div className="navbar site-container">
         <div className="navbar-start">
-          <Link className="btn btn-secondary font-bold text-2xl" to="/">
+          <Link className="btn bg-success font-bold text-2xl" to="/">
             TodoApp
           </Link>
         </div>
-        <ul className="menu menu-horizontal">
+        <ul className="menu menu-horizontal gap-3">
           <li>
             <NavLink
               className="btn btn-secondary"

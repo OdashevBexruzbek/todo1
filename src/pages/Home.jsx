@@ -80,6 +80,7 @@ function Home() {
           <div className="grid grid-cols-5 gap-4 font-semibold text-lg border-b-2 pb-2 mb-4">
             <h2 className="text-center font-medium text-3xl">№</h2>
             <h2 className="text-center font-medium text-2xl">Task Name</h2>
+            <h2 className="text-center font-medium text-2xl">Complete</h2>
             <h2 className="text-center font-medium text-2xl">Delete</h2>
           </div>
           <div className="space-y-2">
@@ -92,7 +93,16 @@ function Home() {
                   {index + 1}
                 </h3>
                 <h4 className="text-center font-bold text-xl">{todo.value}</h4>
-                
+
+                <div className="flex gap-3 items-center">
+                    <input
+                      className="checkbox checkbox-success text-center"
+                      type="checkbox"
+                      // onChange={() => dispatch(changeStatusTodo(todo.id))}
+                      // checked={todo.completed}
+                    />
+                  </div>
+
                 <div className="text-center">
                   <button
                     onClick={() => dispatch(removeTodo(todo.id))}
